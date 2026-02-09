@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Garden — Preview</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery a {
+            display: block;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+            transition: transform .08s ease-in-out;
+        }
+
+        .gallery a:hover {
+            transform: translateY(-2px);
+        }
+
+        .gallery img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .cap {
+            padding: 8px 10px;
+            font-size: 0.95rem;
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <a class="back" href="../index.html">&larr; Back</a>
+        <h1>Study Garden</h1>
+        <p class="muted">Screenshots from the Study Garden application.</p>
+        <div class="gallery">
+            <a href="../assets/login.png" target="_blank" rel="noreferrer">
+                <img src="../assets/login.png" alt="StudyGarden – dashboard" />
+                <div class="cap">Login Form</div>
+            </a>
+
+            <a href="../assets/timer.png" target="_blank" rel="noreferrer">
+                <img src="../assets/timer.png" alt="StudyGarden – garden view" />
+                <div class="cap">Timer Page</div>
+            </a>
+
+            <a href="../assets/garden.png" target="_blank" rel="noreferrer">
+                <img src="../assets/garden.png" alt="StudyGarden – garden view" />
+                <div class="cap">Garden Page</div>
+            </a>
+
+            <a href="../assets/leaderboard.png" target="_blank" rel="noreferrer">
+                <img src="../assets/leaderboard.png" alt="StudyGarden – garden view" />
+                <div class="cap">leaderboard Page</div>
+            </a>
+        </div>
+
+    </main>
+</body>
+
+</html>
