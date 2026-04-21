@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luke’sList — Preview</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .hero {
+            margin-bottom: 28px;
+        }
+
+        .video-wrap {
+            display: flex;
+            justify-content: center;
+            margin: 24px 0 36px;
+        }
+
+        .phone-video {
+            width: min(100%, 360px);
+            aspect-ratio: 9 / 19.5;
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            overflow: hidden;
+            background: #000;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .phone-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-title {
+            margin: 36px 0 14px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .gallery a {
+            display: block;
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            overflow: hidden;
+            background: #fff;
+            text-decoration: none;
+            transition: transform .08s ease-in-out, box-shadow .08s ease-in-out;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .gallery a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+        }
+
+        .shot-frame {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            background: linear-gradient(to bottom, #fcfcfc, #f6f6f6);
+        }
+
+        .shot-frame img {
+            width: 100%;
+            max-width: 240px;
+            aspect-ratio: 9 / 19.5;
+            object-fit: cover;
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            background: #fff;
+        }
+
+        .cap {
+            padding: 10px 12px;
+            font-size: 0.95rem;
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <a class="back" href="../index.html">&larr; Back</a>
+
+        <section class="hero">
+            <h1>Luke’sList</h1>
+            <p class="muted">
+                A verified student marketplace with built-in messaging, designed for safe and trusted campus
+                transactions
+            </p>
+        </section>
+
+        <!-- VIDEO -->
+        <section>
+            <h2 class="section-title">Showcase Video</h2>
+            <div class="video-wrap">
+                <div class="phone-video">
+                    <video controls playsinline autoplay muted loop poster="/assets/lukeslist/search.png">
+                        <source src="/assets/lukeslist/showcase.MP4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOTS -->
+        <section>
+            <h2 class="section-title">App Screens</h2>
+            <div class="gallery">
+
+                <!-- MAIN / SEARCH FIRST -->
+                <a href="/assets/lukeslist/search.png" target="_blank">
+                    <div class="shot-frame">
+                        <img src="/assets/lukeslist/search.png" alt="Search / listings feed" />
+                    </div>
+                    <div class="cap">Search / Listings Feed</div>
+                </a>
+
+                <a href="/assets/lukeslist/chat.png" target="_blank">
+                    <div class="shot-frame">
+                        <img src="/assets/lukeslist/chat.png" alt="Chat page" />
+                    </div>
+                    <div class="cap">Chat (Buyer ↔ Seller Messaging)</div>
+                </a>
+
+                <a href="/assets/lukeslist/favorites.png" target="_blank">
+                    <div class="shot-frame">
+                        <img src="/assets/lukeslist/favorites.png" alt="Favorites page" />
+                    </div>
+                    <div class="cap">Favorites</div>
+                </a>
+
+                <a href="/assets/lukeslist/inbox.png" target="_blank">
+                    <div class="shot-frame">
+                        <img src="/assets/lukeslist/inbox.png" alt="Inbox page" />
+                    </div>
+                    <div class="cap">Inbox</div>
+                </a>
+
+                <a href="/assets/lukeslist/adminproduct.png" target="_blank">
+                    <div class="shot-frame">
+                        <img src="/assets/lukeslist/adminproduct.png" alt="Admin Product page" />
+                    </div>
+                    <div class="cap">Admin Product View (fake data)</div>
+                </a>
+
+                <a href="/assets/lukeslist/adminuser.png" target="_blank">
+                    <div class="shot-frame">
+                        <img src="/assets/lukeslist/adminuser.png" alt="Admin User page" />
+                    </div>
+                    <div class="cap">Admin User View (fake data)</div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
